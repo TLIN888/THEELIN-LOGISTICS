@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>บันทึกงาน รถหัวลาก </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .field input {
+            border: 2px solid #000; /* เปลี่ยนเส้นกรอบให้มีหนาขึ้นเป็น 2px */
+            padding: 8px; /* เพิ่ม padding เพื่อปรับขนาดของช่องข้อมูล */
+        }
+
+        .field input:focus {
+            outline: none; /* ลบเส้นกรอบที่ปรากฏเมื่อมีการคลิกเพื่อใส่ข้อมูล */
+        }
+
+        label {
+            color: #333; /* เปลี่ยนสีข้อความ label เป็นสีเข้ม */
+        }
+
+        .formbg-inner {
+            background-color: #f4f4f4; /* เปลี่ยนสีพื้นหลังของช่องข้อมูลให้เข้มขึ้น */
+            border-radius: 10px; /* เพิ่มขอบมนเข้ากับช่องข้อมูล */
+            padding: 20px; /* เพิ่ม padding เพื่อปรับขนาดของพื้นหลัง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้กล่องช่องข้อมูล */
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="login-root">
+      <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+        <div class="loginbackground box-background--white padding-top--64">
+          <div>
+            <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+              <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+              </div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+              <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+              <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+              <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+              <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+              <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+              <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+              <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+              <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+            </div>
+          </div>
+        </div>
+            <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+            <h1><a rel="dofollow">บันทึกข้อมูลงาน หัวลาก</a></h1>
+          </div>
+          <div class="formbg-outer">
+            <div class="formbg">
+              <div class="formbg-inner padding-horizontal--48">
+                <span class="padding-bottom--15" style="color: red;">ข้อมูล พขร. และ ข้อมูลรถ :</span>
+                <form id="stripe-login" method="post" name="myForm">
+
+                  <div class="field padding-bottom--24">
+                    <label for="บริษัท">บริษัท</label>
+                    <input type="text" name="บริษัท" placeholder="ชื่อบริษัทรถ">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                      <label for="ชื่อ-นามสกุล">ชื่อ-นามสกุล</label>
+                      <input type="text" name="ชื่อ-นามสกุล" placeholder="ชื่อ-นามสกุล (พขร.)">
+                    </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="เบอร์โทร">เบอร์โทร</label>
+                    <input type="text" name="เบอร์โทร" placeholder="เบอร์โทร">
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <label for="ทะเบียนรถ">ทะเบียนรถ</label>
+                    <input type="text" name="ทะเบียนรถ" placeholder="เช่น 99-9999 กทม.">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                  <label for="ทะเบียนหาง">ทะเบียนหาง</label>
+                  <input type="text" name="ทะเบียนหาง" placeholder="เช่น 99-9999 กทม.">
+                  </div>
+
+                  <div class="field padding-bottom--48">
+                  <span class="padding-bottom--15" style="color: red;" >ข้อมูลงาน :</span>
+
+                  <div class="field padding-bottom--24">
+                    <label for="ประเภทงาน">ประเภทงาน</label>
+                    <input type="text" name="ประเภทงาน" placeholder="เช่น ตู้เปิด หรือ ตู้บรรจุ">
+                  </div>  
+
+                  <div class="field padding-bottom--24">
+                    <label for="บุ๊คกิ้ง">บุ๊คกิ้ง</label>
+                    <input type="text" name="บุ๊คกิ้ง" placeholder="บุ๊คกิ้ง">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="เบอร์ตู้">เบอร์ตู้</label>
+                    <input type="text" name="เบอร์ตู้" placeholder="เบอร์ตู้">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="ขนาดตู้ / ชนิดตู้">ขนาดตู้ / ชนิดตู้</label>
+                    <input type="text" name="ขนาดตู้ / ชนิดตู้" placeholder="เช่น 40'HC หรือ 20'GP เป็นต้น ">
+                  </div>  
+
+                  <div class="field padding-bottom--24">
+                    <label for="ต้นทาง">ต้นทาง</label>
+                    <input type="text" name="ต้นทาง" placeholder="ท่ารับตู้หนัก หรือ ลานรับตู้เปล่า">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="วันที่รับตู้">วันที่รับตู้</label>
+                    <input type="text" name="วันที่รับตู้" placeholder="วันที่เข้ารับตู้หนัก หรือ เข้ารับตู้เปล่า">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="ปลายทาง">ปลายทาง</label>
+                    <input type="text" name="ปลายทาง" placeholder="โรงงาน หรือ พิกัดลูกค้า">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="วันที่ถึงปลายทาง">วันที่ถึงปลายทาง</label>
+                    <input type="text" name="วันที่ถึงปลายทาง" placeholder="วันที่รถถึง โรงงาน หรือ พิกัดลูกค้า">
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="สถานที่คืนตู้">สถานที่คืนตู้</label>
+                    <input type="text" name="สถานที่คืนตู้" placeholder="ท่าคืนตู้หนัก หรือ ลานคืนตู้เปล่า">
+                  </div>  
+
+                  <div class="field padding-bottom--24">
+                    <label for="วันที่คืนตู้">วันที่คืนตู้</label>
+                    <input type="text" name="วันที่คืนตู้" placeholder="วันที่คืนตู้หนักลงท่า หรือ วันที่คืนตู้เปล่า">
+                  </div> 
+
+                  <div class="field padding-bottom--48">
+                  <span class="padding-bottom--15" style="color: red;" >ข้อมูลค่าใช้จ่าย :</span>
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่าผ่านท่าเรือ">ค่าผ่านท่าเรือ</label>
+                    <input type="text" name="ค่าผ่านท่าเรือ" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div>   
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่ารับตู้เปล่า">ค่ารับตู้เปล่า</label>
+                    <input type="text" name="ค่ารับตู้เปล่า" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div> 
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่าคืนตู้เปล่า">ค่าคืนตู้เปล่า</label>
+                    <input type="text" name="ค่าคืนตู้เปล่า" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div> 
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่าซ่อมตู้">ค่าซ่อมตู้</label>
+                    <input type="text" name="ค่าซ่อมตู้" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div> 
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่าล้างตู้">ค่าล้างตู้</label>
+                    <input type="text" name="ค่าล้างตู้" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div> 
+
+                  <div class="field padding-bottom--24">
+                    <label for="ค่าดรอปตู้เปล่า">ค่าดรอปตู้เปล่า</label>
+                    <input type="text" name="ค่าดรอปตู้เปล่า" placeholder="หากไม่มีให้ใส่ เลข 0">
+                  </div>   
+
+                  <div class="field padding-bottom--24">
+                    <input type="submit" name="submit" value="บันทึกข้อมูล">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="footer-link padding-top--50">
+
+              <div class="listing padding-top--50 padding-bottom--50 flex-flex center-center">
+                <span><a>THEELIN LOGISTICS</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzSiz4vF0tBid8_Q2OVxdDMofX7w5GW5z67eyIZJh345Vv0Zv2oRXZ7MpW5Nx_jYSF7/exec';
+  const form = document.forms['myForm'];
+
+      form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              if (response.ok) {
+                return response.json();
+              } else {
+                throw new Error('Network response was not ok');
+              }
+            })
+            .then(data => {
+              if (data.result === 'success') {
+                Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'บันทึกข้อมูลเรียบร้อย',
+                  showConfirmButton: false,
+                  timer: 1500
+                });
+                form.reset(); // รีเซ็ตฟอร์มหลังจากส่งข้อมูลเรียบร้อย
+              } else {
+                throw new Error(data.error);
+              }
+            })
+            .catch(error => {
+              console.error('Error!', error.message);
+              Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'เกิดข้อผิดพลาด',
+                text: 'ไม่สามารถส่งข้อมูลได้ กรุณาลองใหม่ภายหลัง',
+                showConfirmButton: true
+              });
+            });
+        });
+      </script>
+
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
