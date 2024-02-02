@@ -1,4 +1,4 @@
-var sheetName = 'ชีต1';
+var sheetName = 'ม.ค.67';
 var scriptProp = PropertiesService.getScriptProperties();
 
 function intialSetup () {
