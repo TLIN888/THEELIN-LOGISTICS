@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+      .field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.field input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
         .field input {
             border: 2px solid #000; /* เปลี่ยนเส้นกรอบให้มีหนาขึ้นเป็น 2px */
             padding: 8px; /* เพิ่ม padding เพื่อปรับขนาดของช่องข้อมูล */
