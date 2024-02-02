@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>บันทึกงาน รถหัวลาก </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-      .field {
-    margin-bottom: 20px;
-}
+        .field {
+            margin-bottom: 20px;
+        }
 
-.field label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.field input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.field input:focus {
-    border-color: #007bff;
-    outline: none;
-}
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
         .field input {
-            border: 2px solid #000; /* เปลี่ยนเส้นกรอบให้มีหนาขึ้นเป็น 2px */
-            padding: 8px; /* เพิ่ม padding เพื่อปรับขนาดของช่องข้อมูล */
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
         }
 
         .field input:focus {
-            outline: none; /* ลบเส้นกรอบที่ปรากฏเมื่อมีการคลิกเพื่อใส่ข้อมูล */
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .field input {
+            border: 2px solid #000;
+            padding: 8px;
+        }
+
+        .field input:focus {
+            outline: none;
         }
 
         label {
-            color: #333; /* เปลี่ยนสีข้อความ label เป็นสีเข้ม */
+            color: #333;
         }
 
         .formbg-inner {
-            background-color: #f4f4f4; /* เปลี่ยนสีพื้นหลังของช่องข้อมูลให้เข้มขึ้น */
-            border-radius: 10px; /* เพิ่มขอบมนเข้ากับช่องข้อมูล */
-            padding: 20px; /* เพิ่ม padding เพื่อปรับขนาดของพื้นหลัง */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้กล่องช่องข้อมูล */
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
         }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="login-root">
-      <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
-        <div class="loginbackground box-background--white padding-top--64">
-          <div>
-            <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
-              <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
-              </div>
+        <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+            <div class="loginbackground box-background--white padding-top--64">
+                <div>
+                    <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+                        <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+                        </div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+                        <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+                        <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+                        <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+                        <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+                        <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+                        <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+                        <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+                    </div>
+                    <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+                        <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+                    </div>
+                </div>
             </div>
-            <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
-              <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
-              <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
-              <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
-              <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
-              <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
-              <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
-              <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
-            </div>
-            <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
-              <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
-            </div>
-          </div>
-        </div>
             <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
-            <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-            <h1><a rel="dofollow">บันทึกข้อมูลงาน หัวลาก</a></h1>
+                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                    <h1><a rel="dofollow">บันทึกข้อมูลงาน หัวลาก</a></h1>
           </div>
           <div class="formbg-outer">
             <div class="formbg">
